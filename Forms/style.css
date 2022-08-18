@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+form{
+    width: 100%;
+}
+
+textarea{
+    width: 300px;
+    height: 100px;
+    resize: none;
+}
+
+#button{
+    width: 100px;
+    height: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#button:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pontos Turísticos</title>
+</head>
+<body>
+    <form action="">
+        <h2>Projeto Traveller - Cadastro de Ponto Turístico</h2>
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" 
+                    name=""
+                    id="nome"
+                    placeholder="Ex: Casa das Lagunas" 
+                    maxlength="50" 
+                    minlength="3" 
+                    required>
+        </div>
+        <hr>
+        <h3>Localização:</h3>
+            <div class="campos">
+                <div class="">
+                    <label for="rua">Rua</label>
+                    <input type="text" id="rua" required placeholder="ex: Av. Paulista">
+                    <label for="numero">Número</label>
+                    <input type="number" id="numero" required placeholder="ex: 123456">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" required placeholder="ex: Cerqueira Cesar">
+                </div>
+            </div>
+            <br>
+            <div class="">
+                <label for="cep">Cep</label>
+                <input type="text" id="cep" required placeholder="ex: 12345-678">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="numero" required placeholder="ex: São Paulo">
+                <label for="estados">Estado</label>
+                <input list="uf" id="estados" class="lista" required placeholder="ex: Selecione o estado">
+                <datalist id="uf">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </datalist>
+            </div>
+            <hr>
+    
+        <h3>Classificação</h3>
+        <div>
+            <label for="point">Tipo:</label for="suite">
+            <select id="point" required>
+            <option value="0">Selecione uma opção</option>
+            <option value="1">Hotel</option>
+            <option value="2">Restaurante</option>
+            <option value="3">Bar</option>
+            <option value="4">Trilha</option>
+            <option value="5">Mirante</option>
+            <option value="6">Museu</option>
+            <option value="7">Praça</option>
+            <option value="8">Praia</option>
+            <option value="9">Monumento</option>
+            <option value="10">Outros</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="entrada">Entrada: </label>
+            <input type="radio" name="entrada" id="gratis">
+            <label for="gratis">Grátis</label>
+
+            <input type="radio" name="entrada" id="pago">
+            <label for="pago">Pago</label>
+        </div>
+        <br>
+        <div>
+            <label for="numero">Valor Entrada (R$)</label>
+            <input type="number" id="numero">
+        </div>
+        <br>
+        <div>
+            <label for="classificacao"> Classificação Estrelas: </label>
+            <select id="point" required>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="description">Descrição</label><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <hr>
+        <h3>Contato</h3>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="ex: hotel@hotel.com">
+        <label for="site">Site:</label>
+        <input type="url" id="site" required placeholder="ex: www.hotel.com">
+        <label for="dataCadastro"> Data do Cadastro</label>
+        <input type="date" name="" id="">
+        <hr>
+        <div class="botoes">
+            <input type="submit" value="Enviar" id="button">
+        </div>
+    </form>
+</body>
+</html>
