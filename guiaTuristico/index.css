@@ -13,8 +13,12 @@ h1, h2{
 h2{
     font-weight: 200;
     margin-bottom: 25px;
+    font-weight: 20px;
 }
 
+p {
+    font-size: 16px;
+}
 #title{
     width: 100%;
     text-align: center;
@@ -27,6 +31,7 @@ strong, p{
 img {
     width: 100%;
     height:100%;
+    border: 2px solid;
 }
 
 /*mobile*/
@@ -39,6 +44,7 @@ img {
     width: 96%;
     margin-left: 2%;
     margin-bottom: 50px;
+    
 }
 
 
